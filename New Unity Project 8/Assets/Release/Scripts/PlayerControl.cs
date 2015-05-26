@@ -4,9 +4,10 @@ using System.Collections;
 public class PlayerControl : MonoBehaviour {
 	public float speed;
 	public float up;
+	private GameController gl;
 	// Use this for initialization
 	void Start () {
-	
+		gl = GameObject.FindObjectOfType(typeof(GameController)) as GameController;
 	}
 	
 	// Update is called once per frame
